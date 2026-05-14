@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI and Accountability</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="editorial-site">
+
+  <!-- Skip link for screen readers -->
+  <a href="#main-content" class="visually-hidden-focusable skip-link">Skip to main content</a>
+
+  <!-- Fixed chrome: 56px nav + 3px progress -->
+  <header class="site-fixed-header">
+    <nav class="navbar navbar-expand-md navbar-light site-navbar fixed-top" aria-label="Main navigation">
+      <div class="container-lg site-max">
+        <span class="navbar-brand brand-text mb-0 me-auto">AI &amp; Accountability</span>
+
+        <small class="progress-label text-muted ms-auto me-2 d-md-none" id="progress-label-mobile">Section 1 of 6</small>
+
+        <button class="navbar-toggler border-0 p-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-md-auto flex-wrap gap-md-1 align-items-md-center">
+            <li class="nav-item"><a class="nav-link nav-section-link active" href="#" data-section="0">Intro</a></li>
+            <li class="nav-item"><a class="nav-link nav-section-link" href="#" data-section="1">Ethical Issues</a></li>
+            <li class="nav-item"><a class="nav-link nav-section-link" href="#" data-section="2">Stakeholders</a></li>
+            <li class="nav-item"><a class="nav-link nav-section-link" href="#" data-section="3">Deeper Dive</a></li>
+            <li class="nav-item"><a class="nav-link nav-section-link" href="#" data-section="4">Options for Action</a></li>
+            <li class="nav-item"><a class="nav-link nav-section-link" href="#" data-section="5">Quiz</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="progress-label-dock" class="progress-label-dock d-none d-md-block">
+      <span id="progress-label" class="progress-label-fixed">Section 1 of 6</span>
+    </div>
+    <div id="progress-root" class="progress-strip" role="progressbar" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1" aria-label="Reading progress">
+      <div class="progress-strip-track">
+        <div class="progress-strip-fill" id="progress-fill" style="width:16.66%"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main-content">
+
+    <!-- ============================
+         SECTION 0 — INTRO
+    ============================= -->
+    <section class="page-section active" id="section-0" aria-labelledby="intro-heading">
+      <div class="container-lg site-max">
+
+        <!-- Hero (reference-inspired) -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-9 text-center text-md-start">
+            <p class="hero-label">A story about technology, harm, and who pays the price</p>
+            <h1 id="intro-heading" class="hero-headline">
+              AI makes things up.<br>
+              When that <em>harms someone</em>,<br>
+              who's responsible?
+            </h1>
+            <p class="hero-sub">
+              As of early 2026, the BBC found that <strong>45% of AI queries produce erroneous answers</strong>.
+              Yet more people than ever are using these tools for high-stakes tasks — legal research,
+              medical questions, financial advice.
+            </p>
+            <button type="button" class="btn start-btn" id="start-btn">
+              Start Here <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+
+            <hr class="hero-rule" />
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-num">$5,000</div>
+                <div class="stat-label">Fine against a lawyer who submitted AI-generated fake citations in federal court</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">~30%</div>
+                <div class="stat-label">Of AI-generated medical summaries contain at least one factual error (recent studies)</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">0</div>
+                <div class="stat-label">Clear US federal standards yet exist for who is liable when AI output causes harm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story card -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-9">
+            <div class="card story-card">
+              <div class="card-body p-4">
+                <div class="callout-label mb-2">A real case</div>
+                <h2 class="card-title h4 fw-bold mb-3">Mata v. Avianca (2023)</h2>
+                <p class="card-text">
+                  In May 2023, lawyer Steven Schwartz used ChatGPT to research case law for a federal filing.
+                  The AI generated <strong>six completely fake legal cases</strong> — complete with fabricated
+                  citations, judges, and opinions. Schwartz submitted them to court.
+                </p>
+                <p class="card-text mb-0">
+                  When opposing counsel couldn't find the cases, the judge demanded answers.
+                  Schwartz was <strong>fined $5,000</strong> and faced professional sanctions. This became the
+                  first major public reckoning with AI hallucination in a professional setting.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Warning callout -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-9">
+            <div class="callout callout-red callout-box d-flex gap-3 align-items-start mb-4" role="alert">
+              <i class="bi bi-exclamation-triangle-fill fs-4 flex-shrink-0 mt-1" aria-hidden="true"></i>
+              <div>
+                <div class="callout-label">High stakes</div>
+                <p class="mb-0">
+                The problem isn't just law. A 2024 study found that roughly
+                <strong>30% of AI-generated medical summaries contained at least one factual error</strong>.
+                If a doctor uses an AI tool that recommends the wrong medication, who is liable
+                when the patient is harmed?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Big question -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-9">
+            <div class="big-question-box text-center p-4">
+              <p class="mb-1 text-secondary">With a surge in high-stakes AI use, false information can now seriously affect someone's life.</p>
+              <p class="big-question mb-0">When AI causes harm — <span class="text-accent">who is responsible?</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav buttons -->
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="footer-nav">
+              <button type="button" class="btn back-section-btn section-nav--back btn-prev" disabled><i class="bi bi-arrow-left me-1"></i> Back</button>
+              <button type="button" class="btn next-section-btn section-nav--next btn-next">Next: Ethical Issues <i class="bi bi-arrow-right ms-1"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 1 — ETHICAL ISSUES
+    ============================= -->
+    <section class="page-section" id="section-1" aria-labelledby="ethics-heading" hidden>
+      <div class="container-lg site-max">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+
+            <p class="page-eyebrow">Section 2 of 6</p>
+            <h2 id="ethics-heading" class="page-title">Ethical Issues</h2>
+            <p class="page-intro">
+              The core issue is <strong>accountability</strong>. There is no consensus on whether responsibility
+              falls on the user, the company, or the engineers who built the model. This ambiguity means
+              harm can occur with no clear path to justice.
+            </p>
+
+            <h3 class="h5 fw-semibold mb-3">What does this harm look like?</h3>
+
+            <!-- Harm cards using Bootstrap grid -->
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <div class="card harm-card h-100">
+                  <div class="card-body d-flex gap-3">
+                    <span class="harm-icon" aria-hidden="true">💊</span>
+                    <div>
+                      <strong>Medical harm:</strong> A patient receives incorrect medication because an AI tool misread their allergy history, leading to a severe allergic reaction.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card harm-card h-100">
+                  <div class="card-body d-flex gap-3">
+                    <span class="harm-icon" aria-hidden="true">⚖️</span>
+                    <div>
+                      <strong>Professional damage:</strong> A lawyer's career is damaged because they relied on fake legal precedents generated by AI.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card harm-card h-100">
+                  <div class="card-body d-flex gap-3">
+                    <span class="harm-icon" aria-hidden="true">📉</span>
+                    <div>
+                      <strong>Equity gap:</strong> A low-income person without resources to verify AI-generated advice acts on false information and faces consequences.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card harm-card h-100">
+                  <div class="card-body d-flex gap-3">
+                    <span class="harm-icon" aria-hidden="true">📄</span>
+                    <div>
+                      <strong>Job loss:</strong> A paralegal loses their job after submitting a brief containing hallucinated citations they couldn't identify.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="callout callout-blue callout-box d-flex gap-3 align-items-start mb-4" role="alert">
+              <i class="bi bi-info-circle-fill fs-4 flex-shrink-0 mt-1" aria-hidden="true"></i>
+              <div>
+                <div class="callout-label callout-label-blue">Accountability gap</div>
+                <p class="mb-0">
+                When these harms occur, victims face deep uncertainty: Should they sue the AI company?
+                The professional who used the tool? <strong>Is anyone even responsible?</strong>
+                This lack of clarity leaves people vulnerable and allows harm to keep happening without accountability.
+                </p>
+              </div>
+            </div>
+
+            <button type="button" class="learn-more-toggle" aria-expanded="false" aria-controls="discussion-panel">
+              <span>Learn more: Discussion questions</span>
+              <span class="learn-more-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="discussion-panel" class="learn-more-content mb-5">
+              <div class="discussion-questions">
+                <div class="dq-item">
+                  <div class="dq-num">01</div>
+                  <div class="dq-text">If a lawyer does not verify AI-generated citations and they turn out to be fake, who is most responsible?</div>
+                </div>
+                <div class="dq-item">
+                  <div class="dq-num">02</div>
+                  <div class="dq-text">Should AI companies be held to the same standard as search engines or encyclopedias?</div>
+                </div>
+                <div class="dq-item">
+                  <div class="dq-num">03</div>
+                  <div class="dq-text">Does the disproportionate impact on low-income users change who has an obligation to act?</div>
+                </div>
+                <div class="dq-item">
+                  <div class="dq-num">04</div>
+                  <div class="dq-text">Should AI tools with known hallucination rates be allowed in clinical settings at all?</div>
+                </div>
+                <div class="dq-item">
+                  <div class="dq-num">05</div>
+                  <div class="dq-text">What does the gap between EU and US regulation tell us about how different societies weigh innovation against protection?</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-nav">
+              <button type="button" class="btn back-section-btn section-nav--back btn-prev"><i class="bi bi-arrow-left me-1"></i> Back</button>
+              <button type="button" class="btn next-section-btn section-nav--next btn-next">Next: Stakeholders <i class="bi bi-arrow-right ms-1"></i></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 2 — STAKEHOLDERS
+    ============================= -->
+    <section class="page-section" id="section-2" aria-labelledby="stakeholders-heading" hidden>
+      <div class="container-lg site-max">
+
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-10">
+            <p class="page-eyebrow">Section 3 of 6</p>
+            <h2 id="stakeholders-heading" class="page-title">Who's Involved?</h2>
+            <p class="page-intro">
+              AI hallucination doesn't affect everyone equally. Here's how different groups experience
+              the problem — and what's at stake for each of them.
+            </p>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center mb-5">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card stakeholder-card h-100">
+              <div class="card-body p-4">
+                <div class="stakeholder-icon mb-3" aria-hidden="true">🧑‍💻</div>
+                <h3 class="h5 fw-bold mb-2">General Users</h3>
+                <p class="card-text small">
+                  Everyday people using AI for health, legal, and general questions. They are the
+                  <strong>least protected by current law</strong> and often the most vulnerable to harm from false information.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card stakeholder-card h-100">
+              <div class="card-body p-4">
+                <div class="stakeholder-icon mb-3" aria-hidden="true">⚖️</div>
+                <h3 class="h5 fw-bold mb-2">Legal Professionals</h3>
+                <p class="card-text small">
+                  Lawyers and paralegals who risk <strong>professional sanctions, fines, and reputational damage</strong>
+                  when hallucinated content enters a filing. They face pressure to adopt AI for efficiency
+                  but bear personal liability when it fails.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medical professionals — full-width featured card -->
+          <div class="col-lg-10">
+            <div class="card stakeholder-card stakeholder-featured">
+              <div class="card-body p-4">
+                <span class="lens-tag lens-tag-inline mb-2">Medical Professional Note</span>
+                <div class="row align-items-start g-4">
+                  <div class="col-md-7">
+                    <div class="stakeholder-icon mb-2" aria-hidden="true">🩺</div>
+                    <h3 class="h5 fw-bold mb-2">Medical Professionals</h3>
+                    <p class="card-text small">
+                      Doctors and nurses adopting AI tools face <strong>malpractice exposure</strong> when AI errors
+                      cause patient harm. They're caught between the promise of AI assistance and the reality
+                      that they remain legally responsible for all medical decisions.
+                    </p>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="callout callout-blue medical-callout mb-0" role="note">
+                      <div class="callout-label callout-label-blue">Note for medical professionals</div>
+                      <p class="mb-0 small">
+                      <strong>For clinicians:</strong> Under current law, even if an AI tool gives you the wrong
+                      answer, <em>you</em> bear the liability for the medical outcome. The AI company's terms of
+                      service typically disclaim responsibility entirely.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card stakeholder-card h-100">
+              <div class="card-body p-4">
+                <div class="stakeholder-icon mb-3" aria-hidden="true">🏢</div>
+                <h3 class="h5 fw-bold mb-2">AI Companies</h3>
+                <p class="card-text small">
+                  OpenAI, Anthropic, Google, and others are currently <strong>shielded by liability disclaimers</strong>
+                  in their terms of service. They have the most to gain financially but the least legal exposure
+                  under current frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card stakeholder-card h-100">
+              <div class="card-body p-4">
+                <div class="stakeholder-icon mb-3" aria-hidden="true">🏛️</div>
+                <h3 class="h5 fw-bold mb-2">Regulators &amp; Policymakers</h3>
+                <p class="card-text small">
+                  Bodies like the FTC, EU enforcement agencies, and Congress are
+                  <strong>struggling to keep pace</strong> with the technology — often without deep technical understanding.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="footer-nav">
+              <button type="button" class="btn back-section-btn section-nav--back btn-prev"><i class="bi bi-arrow-left me-1"></i> Back</button>
+              <button type="button" class="btn next-section-btn section-nav--next btn-next">Next: Deeper Dive <i class="bi bi-arrow-right ms-1"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 3 — DEEPER DIVE
+    ============================= -->
+    <section class="page-section" id="section-3" aria-labelledby="deeper-heading" hidden>
+      <div class="container-lg site-max">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+
+            <p class="page-eyebrow">Section 4 of 6</p>
+            <h2 id="deeper-heading" class="page-title">Deeper Dive</h2>
+            <p class="page-intro mb-4">
+              This section goes deeper on the technical and regulatory background.
+              Feel free to skim or expand the parts that interest you.
+            </p>
+
+            <button type="button" class="learn-more-toggle" aria-expanded="false" aria-controls="learn-hallucination">
+              <span>Learn more: Why does hallucination happen?</span>
+              <span class="learn-more-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="learn-hallucination" class="learn-more-content mb-3">
+              <p>
+                Large Language Models like ChatGPT and Claude generate text by
+                <strong>predicting the next most likely word</strong> based on patterns in their training data.
+                They don't check facts or verify truth — they recognize patterns:
+                "legal citations usually look like this" or "medical advice usually sounds like that."
+              </p>
+              <p>
+                This is why hallucination happens. The model confidently generates fake citations that
+                follow the correct format because it's learned the pattern, not the facts. It's doing
+                exactly what it was designed to do: predict plausible next words. It just can't distinguish
+                between something "plausible sounding" and something actually true.
+              </p>
+              <p class="mb-0">
+                <strong>Hallucination isn't necessarily a bug that can be fixed</strong> — it's fundamental
+                to how these models work. Some newer tools let AI connect to databases or search engines for
+                verification, but most AI tools people use daily have no native fact-checking mechanism.
+              </p>
+            </div>
+
+            <button type="button" class="learn-more-toggle" aria-expanded="false" aria-controls="learn-eu-us">
+              <span>Learn more: EU vs. US regulation</span>
+              <span class="learn-more-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="learn-eu-us" class="learn-more-content mb-5">
+              <p>
+                The <strong>EU AI Act (2024)</strong> is the world's first comprehensive AI regulation,
+                requiring risk assessments, human oversight, and imposing penalties up to
+                <strong>6% of global revenue</strong> for high-risk systems — like those used in healthcare
+                and legal practice.
+              </p>
+              <p class="mb-0">
+                The <strong>US has no equivalent federal law</strong>. It relies on voluntary commitments
+                and sparse state regulations. This gap reveals competing values: the EU prioritizes
+                precaution and protection, while the US favors innovation and self-regulation.
+              </p>
+            </div>
+
+            <div class="footer-nav">
+              <button type="button" class="btn back-section-btn section-nav--back btn-prev"><i class="bi bi-arrow-left me-1"></i> Back</button>
+              <button type="button" class="btn next-section-btn section-nav--next btn-next">Next: Options for Action <i class="bi bi-arrow-right ms-1"></i></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 4 — OPTIONS FOR ACTION
+    ============================= -->
+    <section class="page-section" id="section-4" aria-labelledby="options-heading" hidden>
+      <div class="container-lg site-max">
+
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-10">
+            <p class="page-eyebrow">Section 5 of 6</p>
+            <h2 id="options-heading" class="page-title">Options for Action</h2>
+            <p class="page-intro mb-0">
+              Who should bear responsibility when AI causes harm?
+              Here are three approaches — each with different trade-offs.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-10">
+            <div class="options-tabs" role="tablist" aria-label="Policy options">
+              <button type="button" class="option-tab active" role="tab" aria-selected="true" data-option-tab="0" id="tab-opt-0">Option 1: User responsibility</button>
+              <button type="button" class="option-tab" role="tab" aria-selected="false" data-option-tab="1" id="tab-opt-1">Option 2: Company liability</button>
+              <button type="button" class="option-tab" role="tab" aria-selected="false" data-option-tab="2" id="tab-opt-2">Option 3: Shared framework</button>
+            </div>
+
+            <div class="option-content-pane active" id="option-pane-0" role="tabpanel" aria-labelledby="tab-opt-0">
+              <h3 class="option-pane-title">Users must verify all AI outputs before relying on them</h3>
+              <p class="option-pane-lead">Under this approach, users and professionals bear the burden of checking every AI-generated claim before acting on it — similar to how liability works today under many companies' terms of service.</p>
+              <p class="small text-secondary mb-3"><em>Example:</em> A lawyer relies on AI-generated citations without checking and gets sanctioned.</p>
+              <div class="pros-cons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>
+                    <li>Simple — no new laws</li>
+                    <li>Encourages critical thinking</li>
+                    <li>Allows innovation</li>
+                  </ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>
+                    <li>Unrealistic for non-experts</li>
+                    <li>Unfair to vulnerable users</li>
+                    <li>All burden on the least-equipped</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="lenses">
+                <span class="lens-chip">Rights lens: weak protection for accurate information</span>
+                <span class="lens-chip">Justice lens: burdens those with least resources</span>
+              </div>
+              <div class="lens-tag lens-tag-block mt-3 mb-0">
+                <strong>Ethical question:</strong> Is it fair to expect expert-level verification from everyday users?
+              </div>
+            </div>
+
+            <div class="option-content-pane" id="option-pane-1" role="tabpanel" aria-labelledby="tab-opt-1" hidden>
+              <p class="lens-tag lens-tag-inline mb-3">Most protective for users</p>
+              <h3 class="option-pane-title">AI companies are responsible for harms caused by their systems</h3>
+              <p class="option-pane-lead">This approach would expose providers to legal liability when their models produce harmful misinformation — creating stronger incentives for safety investment and clearer paths to compensation.</p>
+              <p class="small text-secondary mb-3"><em>Example:</em> A patient is harmed by incorrect AI medical advice and sues the AI company.</p>
+              <div class="pros-cons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>
+                    <li>Strong safety incentives</li>
+                    <li>Clear compensation for harm</li>
+                    <li>Pushes companies to improve</li>
+                  </ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>
+                    <li>Hard to prove causation</li>
+                    <li>May slow innovation</li>
+                    <li>Could limit AI deployment</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="lenses">
+                <span class="lens-chip">Rights lens: prioritizes user protection</span>
+                <span class="lens-chip">Utilitarian lens: long-term safety vs. short-term speed</span>
+              </div>
+              <div class="lens-tag lens-tag-block mt-3 mb-0">
+                <strong>Ethical lens:</strong> Balances safety vs. innovation; prioritizes user protection.
+              </div>
+            </div>
+
+            <div class="option-content-pane" id="option-pane-2" role="tabpanel" aria-labelledby="tab-opt-2" hidden>
+              <h3 class="option-pane-title">Responsibility is split between companies, professionals, and users by role</h3>
+              <p class="option-pane-lead">Regulators would set disclosure rules, error-rate transparency, and tiered liability so accountability matches who had the power and expertise to prevent harm.</p>
+              <p class="small text-secondary mb-3"><em>Example:</em> Doctors verify AI suggestions while companies disclose error rates and share liability depending on context.</p>
+              <div class="pros-cons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>
+                    <li>Balanced and nuanced</li>
+                    <li>Protects non-experts</li>
+                    <li>Shared accountability</li>
+                  </ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>
+                    <li>Complex to implement</li>
+                    <li>Needs new laws</li>
+                    <li>Hard to assign blame</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="lenses">
+                <span class="lens-chip">Justice lens: matches duty to ability</span>
+                <span class="lens-chip">Care ethics: considers relationships between parties</span>
+              </div>
+              <div class="lens-tag lens-tag-block mt-3 mb-0">
+                <strong>Ethical principle:</strong> Responsibility should match ability and role in society.
+              </div>
+            </div>
+
+            <button type="button" class="learn-more-toggle mt-4" aria-expanded="false" aria-controls="learn-eu-act">
+              <span>Learn more: What the EU AI Act does</span>
+              <span class="learn-more-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="learn-eu-act" class="learn-more-content mb-2">
+              The <strong>EU AI Act (2024)</strong> is the most comprehensive attempt so far to regulate AI at scale: risk tiers, conformity checks, and post-market monitoring for high-risk systems (including medical and legal tools). It does not fully settle liability, but it sets precedent the US has not matched with equivalent federal law as of 2026.
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="footer-nav">
+              <button type="button" class="btn back-section-btn section-nav--back btn-prev"><i class="bi bi-arrow-left me-1"></i> Back</button>
+              <button type="button" class="btn next-section-btn section-nav--next btn-next">Next: Take the Quiz <i class="bi bi-arrow-right ms-1"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 5 — QUIZ
+    ============================= -->
+    <section class="page-section" id="section-5" aria-labelledby="quiz-heading" hidden>
+      <div class="container-lg site-max">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <p class="page-eyebrow">Section 6 of 6</p>
+            <h2 id="quiz-heading" class="page-title">Test Your Knowledge</h2>
+            <p class="page-intro mb-4">Five questions covering what you just learned. Each gives you instant feedback.</p>
+
+            <div class="quiz-container mb-4">
+
+              <!-- Q1 -->
+              <div class="quiz-question active" id="q1" data-question="1">
+                <p class="quiz-progress">Question 1 of 5</p>
+                <p class="quiz-q mb-3">What is "hallucination" in the context of AI language models?</p>
+                <div class="d-flex flex-column gap-2 quiz-options mb-3">
+                  <button class="btn quiz-option text-start" data-correct="false">The AI becoming confused by too many inputs</button>
+                  <button class="btn quiz-option text-start" data-correct="true">The AI generating false information that sounds plausible and confident</button>
+                  <button class="btn quiz-option text-start" data-correct="false">An intentional feature to make responses more creative</button>
+                  <button class="btn quiz-option text-start" data-correct="false">A technical glitch that only happens rarely</button>
+                </div>
+                <div class="quiz-feedback" aria-live="polite"></div>
+              </div>
+
+              <!-- Q2 -->
+              <div class="quiz-question" id="q2" data-question="2" hidden>
+                <p class="quiz-progress">Question 2 of 5</p>
+                <p class="quiz-q mb-3">What happened in the <em>Mata v. Avianca</em> case?</p>
+                <div class="d-flex flex-column gap-2 quiz-options mb-3">
+                  <button class="btn quiz-option text-start" data-correct="false">A judge was caught using AI to write legal opinions</button>
+                  <button class="btn quiz-option text-start" data-correct="false">An AI company was sued for defamation</button>
+                  <button class="btn quiz-option text-start" data-correct="true">A lawyer submitted AI-generated fake case citations to a federal court and was fined</button>
+                  <button class="btn quiz-option text-start" data-correct="false">An AI tool was used to successfully win a case</button>
+                </div>
+                <div class="quiz-feedback" aria-live="polite"></div>
+              </div>
+
+              <!-- Q3 -->
+              <div class="quiz-question" id="q3" data-question="3" hidden>
+                <p class="quiz-progress">Question 3 of 5</p>
+                <p class="quiz-q mb-3">Under current US law, if an AI tool causes harm, who is most legally shielded?</p>
+                <div class="d-flex flex-column gap-2 quiz-options mb-3">
+                  <button class="btn quiz-option text-start" data-correct="false">The end user</button>
+                  <button class="btn quiz-option text-start" data-correct="false">The professional who used the tool</button>
+                  <button class="btn quiz-option text-start" data-correct="true">The AI company, through liability disclaimers in their terms of service</button>
+                  <button class="btn quiz-option text-start" data-correct="false">The government regulator</button>
+                </div>
+                <div class="quiz-feedback" aria-live="polite"></div>
+              </div>
+
+              <!-- Q4 -->
+              <div class="quiz-question" id="q4" data-question="4" hidden>
+                <p class="quiz-progress">Question 4 of 5</p>
+                <p class="quiz-q mb-3">Which ethical lens best supports the "Shared Regulatory Framework" approach?</p>
+                <div class="d-flex flex-column gap-2 quiz-options mb-3">
+                  <button class="btn quiz-option text-start" data-correct="false">Responsibility belongs only to whoever profits most</button>
+                  <button class="btn quiz-option text-start" data-correct="true">Responsibility should match a person's ability and role in society</button>
+                  <button class="btn quiz-option text-start" data-correct="false">Users should always bear full responsibility for their choices</button>
+                  <button class="btn quiz-option text-start" data-correct="false">Companies should never be liable for how their tools are used</button>
+                </div>
+                <div class="quiz-feedback" aria-live="polite"></div>
+              </div>
+
+              <!-- Q5 -->
+              <div class="quiz-question" id="q5" data-question="5" hidden>
+                <p class="quiz-progress">Question 5 of 5</p>
+                <p class="quiz-q mb-3">Which group is described as the <em>least protected</em> by current law when AI causes harm?</p>
+                <div class="d-flex flex-column gap-2 quiz-options mb-3">
+                  <button class="btn quiz-option text-start" data-correct="false">Medical professionals</button>
+                  <button class="btn quiz-option text-start" data-correct="false">Legal professionals</button>
+                  <button class="btn quiz-option text-start" data-correct="false">AI company engineers</button>
+                  <button class="btn quiz-option text-start" data-correct="true">General end-users (everyday people)</button>
+                </div>
+                <div class="quiz-feedback" aria-live="polite"></div>
+              </div>
+
+              <!-- Results -->
+              <div class="quiz-results text-center py-3" id="quiz-results" hidden aria-live="polite">
+                <div class="fs-1 mb-2" aria-hidden="true">🎉</div>
+                <h3 class="fw-bold mb-2">Quiz Complete!</h3>
+                <p class="fs-5">You got <span id="score-display" class="text-accent fw-bold">0</span> out of 5 correct.</p>
+                <p id="results-message" class="text-secondary mb-4"></p>
+                <button type="button" class="btn quiz-nav-secondary" id="retake-btn">
+                  <i class="bi bi-arrow-clockwise me-1"></i> Retake Quiz
+                </button>
+              </div>
+
+            </div>
+
+            <div class="footer-nav">
+              <button type="button" class="btn back-section-btn section-nav--back btn-prev"><i class="bi bi-arrow-left me-1"></i> Back</button>
+              <button type="button" class="btn quiz-next" disabled id="finish-btn">
+                <i class="bi bi-check-circle me-1"></i> Finish
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer py-4" role="contentinfo">
+    <div class="container-lg site-max text-center">
+      <p class="text-secondary small mb-1">AI and Accountability &mdash; An ethics exploration for CS / Ethics coursework.</p>
+      <p class="text-secondary footer-fine mb-0">
+        Content based on publicly available sources including <em>Mata v. Avianca</em> (2023), the EU AI Act (2024), and BBC reporting (2026).
+        Built with <a href="https://getbootstrap.com" class="text-accent-muted">Bootstrap 5</a>.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
