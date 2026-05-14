@@ -73,7 +73,7 @@ strong {
 
 /* --- Max width + horizontal padding --- */
 .site-max.container-lg {
-  max-width: 820px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
