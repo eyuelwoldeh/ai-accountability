@@ -126,7 +126,7 @@ strong {
 }
 
 .nav-section-link {
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--body-secondary) !important;
   padding: 0.35rem 0.55rem !important;
